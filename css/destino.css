@@ -1,0 +1,34 @@
+/* Cards con efecto de zoom */
+.destino-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Efecto Hover Básico */
+.destino-card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* Contenedor de la imagen para evitar que el zoom se desborde */
+.card-img-container {
+    overflow: hidden;
+}
+
+.card-img-container img {
+    transition: transform 0.5s ease;
+}
+
+.card-zoom-img:hover .card-img-container img {
+    transform: scale(1.15); /* Zoom más pronunciado solo a la foto */
+}
+
+/* Transición para ocultar/mostrar con jQuery */
+.destino-item {
+    transition: opacity 0.4s ease;
+}
+
+/* Ajustes de imagen en la tarjeta */
+.destino-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}

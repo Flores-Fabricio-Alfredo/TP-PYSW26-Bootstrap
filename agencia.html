@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencias</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/agencia.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-container mt-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm rounded-navbar px-4">
+                <a class="navbar-brand fw-bold text-primary" href="index.html">TurJUY</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMain">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary border-0 rounded-pill px-3"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown has-mega-menu">
+                        <li class="nav-item dropdown has-mega-menu">
+                            <a class="nav-link dropdown-toggle btn btn-outline-primary border-0 rounded-pill px-3"
+                                href="destino.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Destino
+                            </a>
+                            <div class="dropdown-menu mega-menu w-100 border-0 shadow-lg p-4 bg-body-tertiary">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <h6 class="dropdown-header fw-bold fs-5 text-primary">Valle</h6>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">S.S.Jujuy</a>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">El Carmen</a>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">Yala</a>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">Reyes</a>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <h6 class="dropdown-header fw-bold fs-5 text-primary">Quebrada</h6>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">Purmamarca</a>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">Tilcara</a>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">Maimara</a>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <h6 class="dropdown-header fw-bold fs-5 text-primary">Otras Regiones</h6>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">Yungas</a>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">Puna</a>
+                                            <a type="button" class="dropdown-item rounded-2 btn btn-outline-primary"
+                                                href="destino.html">Susques</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link btn btn-outline-primary border-0 rounded-pill px-3"
+                                href="agencia.html">Agencia</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-primary border-0 rounded-pill px-3"
+                                href="precio.html">Precios</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-primary border-0 rounded-pill px-3"
+                                href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-primary border-0 rounded-pill px-3"
+                                href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-primary border-0 rounded-pill px-3"
+                                href="phishing.html">Punto7</a></li>
+
+                    </ul>
+
+                    <div class="dropdown mt-3 mt-lg-0 ms-lg-auto d-flex justify-content-center">
+                        <button
+                            class="btn btn-dark rounded-pill px-3 d-flex align-items-center shadow-sm dropdown-toggle"
+                            id="bd-theme" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-circle-half me-2"></i>
+                            <span id="bd-theme-text">Tema</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end shadow border-0 rounded-4">
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="light">
+                                    <i class="bi bi-sun-fill me-2"></i> Claro
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="dark">
+                                    <i class="bi bi-moon-stars-fill me-2"></i> Oscuro
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center active"
+                                    data-bs-theme-value="auto">
+                                    <i class="bi bi-circle-half me-2"></i> Auto
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<div class="container py-5">
+  <h2 class="text-center mb-5 display-5 fw-bold">Agencias de Viaje en Jujuy</h2>
+  <p class="text-center text-muted mb-5">Descubrí las mejores agencias para explorar la Quebrada, Yungas y la Puna</p>
+
+  <div class="row g-4">
+    
+    <!-- 1 -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="flip-card">
+        <div class="flip-inner">
+
+          <div class="flip-front card">
+            <img src="img/FV1.jpg" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>Norte Andino Tours</h5>
+            </div>
+          </div>
+
+          <div class="flip-back card text-center p-3">
+            <h5>Norte Andino Tours</h5>
+            <p>Especialistas en Quebrada y Puna</p>
+            <ul class="list-unstyled small">
+              <li>✔ Puntualidad</li>
+              <li>✔ Hospitalidad</li>
+            </ul>
+
+            <div class="rating" data-value="5">
+              <i class="bi bi-star" data-index="1"></i>
+              <i class="bi bi-star" data-index="2"></i>
+              <i class="bi bi-star" data-index="3"></i>
+              <i class="bi bi-star" data-index="4"></i>
+              <i class="bi bi-star" data-index="5"></i>
+            </div>
+
+            <p class="mt-2">+54 388 111 2222</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="flip-card">
+        <div class="flip-inner">
+
+          <div class="flip-front card">
+            <img src="img/FV12.jpg" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>EcoYungas Aventura</h5>
+            </div>
+          </div>
+
+          <div class="flip-back card text-center p-3">
+            <h5>EcoYungas Aventura</h5>
+            <p>Trekking y Naturaleza</p>
+            <ul class="list-unstyled small">
+              <li>✔ Aventura Extrema</li>
+              <li>✔ Ecoturismo</li>
+            </ul>
+
+            <div class="rating" data-value="5">
+              <i class="bi bi-star" data-index="1"></i>
+              <i class="bi bi-star" data-index="2"></i>
+              <i class="bi bi-star" data-index="3"></i>
+              <i class="bi bi-star" data-index="4"></i>
+              <i class="bi bi-star" data-index="5"></i>
+            </div>
+
+            <p class="mt-2">+54 388 333 4444</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="flip-card">
+        <div class="flip-inner">
+
+          <div class="flip-front card">
+            <img src="img/FV14.jpg" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>Color Jujuy Excursiones</h5>
+            </div>
+          </div>
+
+          <div class="flip-back card text-center p-3">
+            <h5>Color Jujuy Excursiones</h5>
+            <p>Turismo Familiar</p>
+            <ul class="list-unstyled small">
+                <li>✔ Comodidad</li>
+                <li>✔ Atención niños</li>
+            </ul>
+
+            <div class="rating" data-value="4">
+              <i class="bi bi-star" data-index="1"></i>
+              <i class="bi bi-star" data-index="2"></i>
+              <i class="bi bi-star" data-index="3"></i>
+              <i class="bi bi-star" data-index="4"></i>
+              <i class="bi bi-star" data-index="5"></i>
+            </div>
+
+            <p class="mt-2">+54 388 555 6666</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="flip-card">
+        <div class="flip-inner">
+
+          <div class="flip-front card">
+            <img src="img/FV3.jpg" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>Carnaval Tours</h5>
+            </div>
+          </div>
+
+          <div class="flip-back card text-center p-3">
+            <h5>Carnaval Tours</h5>
+            <p>Fiestas tradicionales y Eventos</p>
+            <ul class="list-unstyled small">
+                <li>✔ Entretenimiento</li>
+                <li>✔ Cultura Local</li>
+              </ul>
+
+            <div class="rating" data-value="5">
+              <i class="bi bi-star" data-index="1"></i>
+              <i class="bi bi-star" data-index="2"></i>
+              <i class="bi bi-star" data-index="3"></i>
+              <i class="bi bi-star" data-index="4"></i>
+              <i class="bi bi-star" data-index="5"></i>
+            </div>
+
+            <p class="mt-2">+54 388 777 8888</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flip-card">
+          <div class="flip-inner">
+  
+            <div class="flip-front card">
+              <img src="img/FV5.jpg" class="card-img-top">
+              <div class="card-body text-center">
+                <h5>Ruta Blanca Safaris</h5>
+              </div>
+            </div>
+  
+            <div class="flip-back card text-center p-3">
+                <h5>Ruta Blanca Safaris</h5>
+                <p>Excursiones Exclusivas</p>
+                <ul class="list-unstyled small">
+                    <li>✔ Seguridad 4x4</li>
+                    <li>✔ Guías bilingües</li>
+                  </ul>
+  
+              <div class="rating" data-value="5">
+                <i class="bi bi-star" data-index="1"></i>
+                <i class="bi bi-star" data-index="2"></i>
+                <i class="bi bi-star" data-index="3"></i>
+                <i class="bi bi-star" data-index="4"></i>
+                <i class="bi bi-star" data-index="5"></i>
+              </div>
+  
+              <p class="mt-2">+54 388 777 8888</p>
+            </div>
+  
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flip-card">
+          <div class="flip-inner">
+  
+            <div class="flip-front card">
+              <img src="img/FV6.jpg" class="card-img-top">
+              <div class="card-body text-center">
+                <h5>Pachamama Trips</h5>
+              </div>
+            </div>
+  
+            <div class="flip-back card text-center p-3">
+                <h5>Pachamama Trips</h5>
+                <p>Multidestino Jujuy</p>
+                <ul class="list-unstyled small">
+                  <li>✔ Logística</li>
+                  <li>✔ Precios</li>
+                </ul>
+  
+              <div class="rating" data-value="5">
+                <i class="bi bi-star" data-index="1"></i>
+                <i class="bi bi-star" data-index="2"></i>
+                <i class="bi bi-star" data-index="3"></i>
+                <i class="bi bi-star" data-index="4"></i>
+                <i class="bi bi-star" data-index="5"></i>
+              </div>
+  
+              <p class="mt-2">+54 388 777 8888</p>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="flip-card">
+            <div class="flip-inner">
+    
+              <div class="flip-front card">
+                <img src="img/FV10.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5>Horizonte Jujeño</h5>
+                </div>
+              </div>
+    
+              <div class="flip-back card text-center p-3">
+                <h5>Horizonte Jujeño</h5>
+                <p>Turismo Sustentable</p>
+                <ul class="list-unstyled small">
+                  <li>✔ Ecoturismo</li>
+                  <li>✔ Atención</li>
+                </ul>
+    
+                <div class="rating" data-value="5">
+                  <i class="bi bi-star" data-index="1"></i>
+                  <i class="bi bi-star" data-index="2"></i>
+                  <i class="bi bi-star" data-index="3"></i>
+                  <i class="bi bi-star" data-index="4"></i>
+                  <i class="bi bi-star" data-index="5"></i>
+                </div>
+    
+                <p class="mt-2">+54 388 777 8888</p>
+              </div>
+    
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flip-card">
+          <div class="flip-inner">
+  
+            <div class="flip-front card">
+              <img src="img/FH6.jpg" class="card-img-top">
+              <div class="card-body text-center">
+                <h5>Cumbres Tours</h5>
+              </div>
+            </div>
+  
+            <div class="flip-back card text-center p-3">
+                <h5>Cumbres Tours</h5>
+                <p>Trekking de Montana</p>
+                <ul class="list-unstyled small">
+                  <li>✔ Seguridad</li>
+                  <li>✔ Equipo incluido</li>
+                </ul>
+  
+              <div class="rating" data-value="5">
+                <i class="bi bi-star" data-index="1"></i>
+                <i class="bi bi-star" data-index="2"></i>
+                <i class="bi bi-star" data-index="3"></i>
+                <i class="bi bi-star" data-index="4"></i>
+                <i class="bi bi-star" data-index="5"></i>
+              </div>
+  
+              <p class="mt-2">+54 388 777 8888</p>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+  </div>
+</div>
+<!-- Footer -->
+    <footer>
+        <div class="container py-5">
+            
+            <div class="row footer-content">
+                <div class="col-12 col-md-4 footer-section">
+                    <h3>Categorias</h3>
+                    <div class="footer-map mb-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14552.016335198424!2d-65.31139455!3d-24.193003650000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f44bc191aab%3A0x6bfa5cc1fa7d82cc!2sPlaza%20Belgrano!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar"
+                        allowfullscreen="" loading="lazy" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: <a href="mailto:info@TurJUY.com" class="text-white">info@TurJUY.com</a></p>
+                    <p>Teléfono: +54 388 4567890</p>
+                    <p>Dirección: Av. Italo Palaco 10 - Jujuy</p>
+                </div>
+                <div class="col-6 col-md-4 footer-section">
+                    <h3>Suscribete</h3>
+                    <p>Suscríbete para recibir noticias y ofertas.</p>
+                    <form class="newsletter-form needs-validation" novalidate>
+                        <div class="mb-3 position-relative">
+                            <input type="email" class="form-control" placeholder="Tu email" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa un email válido.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary w-100">Suscribirse</button>
+                        <div class="spinner-border text-light mt-2 d-none" role="status">
+                            <span class="visually-hidden">Cargando...</span>
+                        </div>
+                    </form>
+                    <h3 class="mt-4">Siguenos</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com"  class="text-body-secondary me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com" class="text-body-secondary me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="https://twitter.com"   class="text-body-secondary me-2"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://spotify.com"   class="text-body-secondary"><i class="bi bi-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-4">
+                <p>© 2026. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/color-modes.js"></script>
+    <script src="js/flipcard.js"></script>
+
+
+</body>
+</html>

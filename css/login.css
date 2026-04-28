@@ -1,0 +1,220 @@
+﻿:root {
+    --bbva-navy: #043263;
+    --bbva-light-blue: #e4f0f8;
+    --bbva-medium-blue: #004481;
+    --bbva-text: #444444;
+    --bbva-gray-border: #DDE3EA;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F4F4;
+    color: var(--bbva-text);
+}
+
+.navbar-bbva {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--bbva-gray-border);
+    padding: 1rem 2.5rem;
+}
+
+.bbva-logo {
+    color: var(--bbva-medium-blue);
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.header-divider {
+    border-left: 1px solid #ccc;
+    margin-left: 15px;
+    padding-left: 15px;
+    color: var(--bbva-medium-blue);
+    font-size: 0.95rem;
+}
+
+.main-container {
+    max-width: 960px;
+    margin-top: 50px;
+}
+
+.login-card {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2.5rem;
+}
+
+.info-card {
+    background-color: var(--bbva-light-blue);
+    border: none;
+    border-radius: 4px;
+    padding: 1.5rem;
+}
+
+
+
+/* Tipografía de título principal */
+h1.bank-title {
+    color: #021a70;
+    font-weight: 950;
+    letter-spacing: -0.5px;
+    font-size: 2.5rem;
+    margin-bottom: 2rem !important;
+}
+
+/* Estilos de inputs flotantes referenciando BBVA */
+.input-container-bbva.form-floating > .form-control,
+.input-container-bbva.form-floating > .form-select {
+    border: 1.5px solid #4b5c70; /* Borde azul-grisáceo */
+    border-radius: 6px;
+    height: 65px;
+    color: #4b5c70;
+    font-size: 1rem;
+    box-shadow: none !important;
+}
+
+.input-container-bbva.form-floating > .form-control:focus,
+.input-container-bbva.form-floating > .form-select:focus {
+    border-color: #021a70;
+    border-width: 2px;
+}
+
+.input-container-bbva.form-floating > label {
+    color: #8c9ba5; /* Color del placeholder suave */
+    font-size: 0.95rem;
+}
+
+.input-container-bbva.form-floating > .form-control:focus ~ label,
+.input-container-bbva.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.input-container-bbva.form-floating > .form-select ~ label {
+    color: #8c9ba5;
+    font-size: 0.8rem;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.input-container-bbva.has-icon .form-control {
+    padding-right: 3rem; /* Espacio para el ícono */
+}
+
+.input-container-bbva .input-icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: #021a70;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Selector dropdown - Evitamos modificar el icono nativo mucho */
+.input-container-bbva .form-select {
+    color: #4b5c70;
+}
+
+.custom-checkbox-container {
+    background-color: #f7f9fc;
+    padding: 1.2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.custom-checkbox-container .form-check-input {
+    width: 26px;
+    height: 26px;
+    border: 1.5px solid #021a70;
+    border-radius: 6px;
+    margin-top: 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+.custom-checkbox-container .form-check-input:checked {
+    background-color: #021a70;
+    border-color: #021a70;
+}
+
+.custom-checkbox-container .form-check-label {
+    margin-left: 12px;
+    color: #4b5c70;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.btn-ingresar {
+    background-color: #DDE3EA;
+    color: #888;
+    border: none;
+    padding: 12px 50px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.btn-ingresar.active {
+    background-color: var(--bbva-medium-blue);
+    color: #ffffff;
+}
+
+.link-bbva {
+    color: var(--bbva-medium-blue);
+    text-decoration: none;
+}
+
+/* Custom Footer Styles */
+.footer-bbva-custom {
+    background-color: #021a70;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.bbva-logo-footer {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+.footer-links a {
+    color: #6dbbff;
+    text-decoration: none;
+    margin-right: 18px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #99d2ff;
+}
+
+.footer-copyright {
+    color: #a5b4c1;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+

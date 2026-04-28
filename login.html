@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBVA - Banca Online (TP)</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="container">
+        <nav class="navbar-bbva d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <span class="bbva-logo">BBVA</span>
+                <span class="header-divider">Ingresar a Banca Online</span>
+            </div>
+            <button class="btn-close" onclick="window.location.href='index.html'" title="Volver al inicio"></button>
+        </nav>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="container main-container">
+        <div class="row g-4">
+
+            <!-- LOGIN -->
+            <div class="col-md-7">
+                <div class="card login-card">
+
+                    <h1 class="mb-4 bank-title">¡Hola! Te damos la bienvenida a Banca Online</h1>
+
+                    <form id="loginForm">
+
+                        <div class="form-floating mb-3 input-container-bbva">
+                            <select class="form-select form-control-bbva" id="docType" aria-label="Tipo de documento">
+                                <option selected>DNI</option>
+                                <option>Pasaporte</option>
+                                <option>LC / LE</option>
+                            </select>
+                            <label for="docType">Tipo de documento</label>
+                        </div>
+
+                        <div class="form-floating mb-3 input-container-bbva has-icon">
+                            <input type="text" class="form-control form-control-bbva" id="docNumber"
+                                placeholder="Número de documento" value="">
+                            <label for="docNumber">Número de documento</label>
+                            <div class="invalid-feedback text-start px-3" id="docNumberError"></div>
+                        </div>
+
+                        <div class="form-floating mb-3 input-container-bbva has-icon">
+                            <input type="text" class="form-control form-control-bbva" id="user" placeholder="Usuario">
+                            <label for="user">Usuario</label>
+                            <div class="invalid-feedback text-start px-3" id="userError"></div>
+                        </div>
+
+                        <div class="form-floating mb-3 input-container-bbva has-icon">
+                            <input type="password" class="form-control form-control-bbva" id="pass" placeholder="Clave">
+                            <label for="pass">Clave</label>
+                            <div class="invalid-feedback text-start px-3" id="passError"></div>
+                        </div>
+
+                        <div class="form-check mb-4 custom-checkbox-container">
+                            <input class="form-check-input" type="checkbox" id="remember">
+                            <label class="form-check-label" for="remember">
+                                Recordar mi documento y usuario
+                            </label>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                <button type="submit" class="btn btn-ingresar" id="submitBtn">
+                                    Ingresar
+                                </button>
+                                <a href="#" class="link-bbva fw-bold">Recuperar claves de acceso</a>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+                <div class="mt-4 text-center">
+                    <p>¿Aún no tenés claves de acceso?
+                        <a href="#" class="link-bbva fw-bold">Crear usuario y clave</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- INFO -->
+            <div class="col-md-5">
+                <div class="info-card">
+                    <h6 class="fw-bold mb-2">Cuidá tus datos</h6>
+                    <p class="small mb-2">
+                        No compartas tus datos personales o claves por email o mensajes.
+                    </p>
+                    <a href="#" class="link-bbva fw-bold small">Conocer más</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container mb-5 mt-4">
+        <footer class="footer-bbva-custom p-4 p-md-5 rounded-4">
+            <div
+                class="d-flex justify-content-between align-items-start align-items-md-center flex-column flex-md-row mb-4">
+                <span class="bbva-logo-footer text-white mb-3 mb-md-0">BBVA</span>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/bbva" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/bbva" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/bbva" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/bbva" target="_blank"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links mb-5">
+                <a href="https://online.bbva.com.ar/fnetcore/login/index.html">Aviso legal</a>
+                <a href="https://online.bbva.com.ar/fnetcore/login/index.html">Aviso sobre navegadores</a>
+                <a href="https://online.bbva.com.ar/fnetcore/login/index.html">BBVA.com</a>
+            </div>
+            <div class="footer-copyright pt-3">
+                <span>© 2026 Banco BBVA Argentina S.A.</span>
+            </div>
+        </footer>
+    </div>
+
+    <!--  LOADER -->
+    <div id="loader" class="loader d-none">
+        <div class="spinner-border text-primary"></div>
+        <p class="mt-3">Validando datos...</p>
+    </div>
+
+    <!--  MODAL PHISHING -->
+    <div class="modal fade" id="phishingModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-3">
+
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-danger w-100">🚨 Simulación de Phishing</h5>
+                </div>
+
+                <div class="modal-body">
+                    <p>Este sitio imitaba un banco real.</p>
+
+                    <ul class="text-start">
+                        <li>❌ URL falsa</li>
+                        <li>❌ Mensaje urgente</li>
+                        <li>❌ Solicitud de credenciales</li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer border-0">
+                    <button class="btn btn-primary w-100" onclick="location.reload()">
+                        Entendido
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/phishing.js"></script>
+
+</body>
+
+</html>

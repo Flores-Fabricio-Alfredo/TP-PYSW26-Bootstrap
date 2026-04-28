@@ -1,0 +1,12 @@
+/* Contenedor de la imagen para evitar que el zoom se desborde */
+.card-img-container {
+    overflow: hidden;
+}
+
+.card-img-container img {
+    transition: transform 0.5s ease;
+}
+
+.card-zoom-img:hover .card-img-container img {
+    transform: scale(1.15); /* Zoom más pronunciado solo a la foto */
+}
